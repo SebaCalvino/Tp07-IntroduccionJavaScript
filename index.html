@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 07 - Introducción a JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/ejercicios.js"></script>
+    <script src="js/utils.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 TP 07 - Introducción a JavaScript</h1>
+        
+        <!-- Ejercicios 1-6 (Anteriores) -->
+        <div class="ejercicio-grupo">
+            <h3>📅 Ejercicio 1: Calculadora de Edad</h3>
+            <input type="date" name="nacimiento" id="Fecha" placeholder="Selecciona tu fecha de nacimiento">
+            <button id="Calcular" onclick="calculadoraEdad()">Calcular Edad</button>
+            <div id="resultado">Tu edad aparecerá aquí</div>
+        </div>
+
+        <div class="ejercicio-grupo">
+            <h3>🍎 Ejercicio 2: Búsqueda de Frutas</h3>
+            <input type="text" name="fruta" id="Fruta" placeholder="Ingresa el nombre de una fruta">
+            <button id="Verificar" onclick="tirandoFruta()">Verificar Disponibilidad</button>
+            <div id="resultado2">El resultado aparecerá aquí</div>
+        </div>
+
+        <hr>
+
+        <!-- Ejercicios 7-11 (Nuevos) -->
+        <div class="ejercicio-grupo">
+            <h3>🔤 Ejercicio 7: Nombres con 'A'</h3>
+            <input type="text" id="listaNombres" placeholder="Ingresa nombres separados por coma (ej: Ana, Pedro, Alberto)">
+            <button onclick="nombresConA()">Filtrar Nombres con A</button>
+            <div id="resultado7">Los nombres que empiecen con 'A' aparecerán aquí</div>
+        </div>
+
+        <div class="ejercicio-grupo">
+            <h3>🔄 Ejercicio 8: Reemplazar Palabras</h3>
+            <input type="text" id="textoOriginal" placeholder="Texto original">
+            <input type="text" id="palabraBuscar" placeholder="Palabra a buscar">
+            <input type="text" id="palabraReemplazo" placeholder="Palabra de reemplazo">
+            <button onclick="reemplazarPalabras()">Reemplazar Palabras</button>
+            <div id="resultado8">El texto resultante aparecerá aquí</div>
+        </div>
+
+        <div class="ejercicio-grupo">
+            <h3>✂️ Ejercicio 9: Cortar Texto</h3>
+            <input type="text" id="textoCompleto" placeholder="Texto completo">
+            <input type="number" id="numeroCaracteres" placeholder="Número de caracteres a cortar">
+            <button onclick="cortarTexto()">Cortar Texto</button>
+            <div id="resultado9">El texto cortado aparecerá aquí</div>
+        </div>
+
+        <div class="ejercicio-grupo">
+            <h3>🔗 Ejercicio 10: String con Separador</h3>
+            <input type="text" id="listaElementos" placeholder="Elementos separados por coma">
+            <button onclick="stringConSeparador()">Unir con Separador</button>
+            <div id="resultado10">El string con separadores aparecerá aquí</div>
+        </div>
+
+        <div class="ejercicio-grupo">
+            <h3>💰 Ejercicio 11: Calculadora de Recaudación</h3>
+            <input type="text" id="listaPedidos" placeholder="Pedidos en formato: Pizza:15.50, Hamburguesa:8.75">
+            <button onclick="calculadoraRecaudacion()">Calcular Recaudación</button>
+            <div id="resultado11">La recaudación total aparecerá aquí</div>
+        </div>
+    </div>
+</body>
+</html>
